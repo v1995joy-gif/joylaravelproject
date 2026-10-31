@@ -17,6 +17,7 @@ RUN apt-get update \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
         libpng-dev \
+        libpq-dev \
         libzip-dev \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install -j"$(nproc)" \
@@ -25,6 +26,7 @@ RUN apt-get update \
         gd \
         mbstring \
         pdo_mysql \
+        pdo_pgsql \
         pcntl \
         zip \
     && rm -rf /var/lib/apt/lists/*
