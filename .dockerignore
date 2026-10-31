@@ -1,0 +1,27 @@
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Git metadata
+.git
+
+# Dependencies
+vendor
+node_modules
+
+# Logs
+storage/logs/*
+
+# PHPUnit cache
+.phpunit.cache
+.phpunit.result.cache
+
+# IDE files
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+
+# Local database backups
+*.sql
